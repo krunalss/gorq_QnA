@@ -8,7 +8,8 @@ langchain_huggingface
 langchain
 langchain_community
 langchain-groq
-langchain_openai 
+langchain_openai
 langchain_core
 faiss-cpu
 langchain_ollama
+langchain_groq
