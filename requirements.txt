@@ -1,4 +1,3 @@
---upgrade pip
 python-dotenv
 langchain
 langchain_community
