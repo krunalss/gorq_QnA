@@ -24,7 +24,8 @@ llm = ChatGroq(groq_api_key=groq_api_key, model="Llama3-70b-8192")
 prompt = ChatPromptTemplate.from_template(
     """
     Answer the questions based on the provided context only.
-    Please provide the most accurate response based on the question
+    Please provide the most accurate response based on the question.
+    After Answer give one simple example which will help undersatding the context. 
     <context>
     {context}
     <context>
@@ -62,7 +63,6 @@ if st.button("Wake up Simon, he might be sleeping!"):
 
 # Display input only when FAISS DB is ready
 if st.session_state.db_ready:
-    st.write("Simon is UP and Ready")
     prompt1 = st.text_input("Ask your question ??")
 
     if prompt1:
