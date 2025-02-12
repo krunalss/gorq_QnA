@@ -39,7 +39,7 @@ def download_hugging_face_embeddings():
 def vector_embeddings():
     if "vectors" not in st.session_state:
         st.session_state.embeddings = download_hugging_face_embeddings()
-        st.session_state.loader=PyPDFDirectoryLoader("/.book")       
+        st.session_state.loader=PyPDFDirectoryLoader("book")       
         st.session_state.docs=st.session_state.loader.load()
         print("docs count")
         print(len(st.session_state.docs))
