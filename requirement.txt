@@ -1,15 +1,15 @@
+--upgrade pip
 python-dotenv
-streamlit
-pypdf
-groq
-sentence_transformers
-PyPDF2
-langchain_huggingface
 langchain
 langchain_community
 langchain-groq
+pypdf
+sentence_transformers
+PyPDF2
+langchain_huggingface
 langchain_openai
 langchain_core
 faiss-cpu
 langchain_ollama
-langchain_groq
+streamlit
+groq
